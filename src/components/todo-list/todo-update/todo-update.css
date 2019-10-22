@@ -1,0 +1,5 @@
+/* Todo update list component style */
+.todo-update-container {
+  display: flex;
+  flex-direction: column;
+}

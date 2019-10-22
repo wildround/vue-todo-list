@@ -1,0 +1,32 @@
+/* Todo list component style */
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.add-button {
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffce00;
+  border: none;
+  outline: none;
+}
+
+.add-button:hover {
+  background-color: #dfb611;
+}
+
+.add-button:active {
+  background-color: #fdce13;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 150px);
+  overflow: auto;
+}

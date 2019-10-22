@@ -1,0 +1,25 @@
+<!-- Todo list template -->
+<div class="todo-list-container">
+  <div v-if="layout === 'list'">
+    <div class="todo-header">
+      <label>Task list</label>
+      <button class="add-button right" @click="addNewTask"> Add a new task </button>
+    </div>
+    <div class="todo-list">
+      <todo-item
+        v-for="(todo, key) in todos"
+        :key="key"
+        :todo="todo"
+        @on-layout-change="onLayoutChange">
+      </todo-item>
+    </div>
+  </div>
+  <todo-update
+    v-if="layout === 'new' || layout === 'edit'"
+    @on-layout-change="onLayoutChange">
+  </todo-update>
+  <todo-comments
+    v-if="layout === 'comments'"
+    @on-layout-change="onLayoutChange">
+  </todo-comments>
+</div>

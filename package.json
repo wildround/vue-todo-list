@@ -1,0 +1,43 @@
+{
+  "name": "vue-todo-list",
+  "version": "1.0.0",
+  "description": "Vue.js todo list",
+  "main": "index.js",
+  "scripts": {
+    "ui": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "start": "node server/server.js",
+    "nodemon": "nodemon server/server.js",
+    "ui-server": "npm run dev && npm run nodemon",
+    "prod-server": "npm run prod && npm run nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wildround/vue-todo-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/wildround/vue-todo-list#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {}
+}

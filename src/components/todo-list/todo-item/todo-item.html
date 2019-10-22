@@ -1,0 +1,11 @@
+<!-- Todo Item template -->
+<div class="todo-item-container">
+  <div class="truncated">
+    {{ todo.title }}
+  </div>
+  <div class="buttons right">
+    <div><button @click="onComments()">comments</button></div>
+    <div><button @click="onEdit()">edit</button></div>
+    <div><button @click="onDelete()">delete</button></div>
+  </div>
+</div>

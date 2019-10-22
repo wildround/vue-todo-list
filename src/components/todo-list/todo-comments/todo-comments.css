@@ -1,0 +1,5 @@
+/* Todo comments component style */
+.todo-comments-container {
+  display: flex;
+  flex-direction: column;
+}
