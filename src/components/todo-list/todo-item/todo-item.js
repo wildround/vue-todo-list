@@ -13,7 +13,7 @@ export default Vue.component("todo-item", {
             console.log(this.todo);
         },
         onEdit() {
-            this.$emit("on-layout-change", "edit");
+            this.$emit("on-layout-change", "edit", this.todo);
             console.log(this.todo);
         },
         onDelete() {

@@ -1,7 +1,8 @@
 <!-- Todo list template -->
 <div class="todo-update-container">
   <div class="todo-header">
-    <label>{{ layout === "new" ? "New Task" : "Edit Task" }}</label>
+    <label v-if="layout === 'new'">New Task</label>
+    <label v-if="layout === 'edit'">{{todo.title}}</label>
     <button class="close-button right" @click="onClose">X</button>
   </div>
 </div>

@@ -16,6 +16,7 @@
   </div>
   <todo-update
     v-if="layout === 'new' || layout === 'edit'"
+    :todo="todo"
     @on-layout-change="onLayoutChange">
   </todo-update>
   <todo-comments

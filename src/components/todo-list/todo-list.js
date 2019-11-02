@@ -16,12 +16,16 @@ export default Vue.component("todo-list", {
     },
     data() {
         return {
-            layout: "list"
+            layout: "list",
+            todo: null
         }
     },
     computed: {
         todos() {
             return this.$store.getters.todos;
+        },
+        todo() {
+            return this.todo
         }
     },
     mounted() {
@@ -34,8 +38,9 @@ export default Vue.component("todo-list", {
         onClose() {
             this.layout = "list";
         },
-        onLayoutChange(layout) {
+        onLayoutChange(layout, todo) {
             this.layout = layout;
+            this.todo = todo;
         }
     }
 });
